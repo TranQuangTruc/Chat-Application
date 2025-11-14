@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ title or "Chat App" }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
     {% block content %}{% endblock %}
 </body>
 </html>
