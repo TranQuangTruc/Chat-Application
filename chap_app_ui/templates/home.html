@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="flex w-full h-screen">
+
+    <!-- Sidebar -->
+    <div class="w-72 bg-white shadow-md h-full flex flex-col">
+
+        <!-- User Header -->
+        <div class="p-4 border-b flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-blue-400"></div>
+            <div>
+                <p class="font-semibold">Rin</p>
+                <p class="text-xs text-gray-500">Online</p>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="p-4">
+            <input 
+                type="text"
+                placeholder="Tìm kiếm..."
+                class="w-full px-3 py-2 border rounded-lg bg-gray-100 focus:ring-2 focus:ring-blue-400 outline-none"
+            >
+        </div>
+
+        <!-- Chat List -->
+        <div class="flex-1 overflow-y-auto">
+
+            <!-- Chat item -->
+            <div class="px-4 py-3 flex items-center gap-3 hover:bg-gray-100 cursor-pointer">
+                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                <div class="flex-1">
+                    <p class="font-medium text-gray-700">Lam</p>
+                    <p class="text-sm text-gray-500 truncate">Ê mai m đi uống cf hong?</p>
+                </div>
+                <span class="text-xs text-gray-400">12:30</span>
+            </div>
+
+            <!-- Chat item -->
+            <div class="px-4 py-3 flex items-center gap-3 hover:bg-gray-100 cursor-pointer">
+                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                <div class="flex-1">
+                    <p class="font-medium text-gray-700">Mai</p>
+                    <p class="text-sm text-gray-500 truncate">T đang code đây</p>
+                </div>
+                <span class="text-xs text-gray-400">11:10</span>
+            </div>
+
+            <!-- Chat item -->
+            <div class="px-4 py-3 flex items-center gap-3 hover:bg-gray-100 cursor-pointer">
+                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                <div class="flex-1">
+                    <p class="font-medium text-gray-700">Group Dev</p>
+                    <p class="text-sm text-gray-500 truncate">Rin đã gửi 1 file</p>
+                </div>
+                <span class="text-xs text-gray-400">09:02</span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Chat Panel (tạm trống - Day 4) -->
+    <div class="flex-1 flex items-center justify-center text-gray-400">
+        <p>Chọn một cuộc trò chuyện để bắt đầu</p>
+    </div>
+
+</div>
+{% endblock %}

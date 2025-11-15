@@ -10,5 +10,9 @@ def login():
 def register():
     return render_template("register.html", title="Đăng ký")
 
+@app.route("/home")
+def home():
+    return render_template("home.html", title="Chat List")
+
 if __name__ == "__main__":
     app.run(debug=True)
