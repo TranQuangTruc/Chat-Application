@@ -28,7 +28,7 @@
         <div class="flex-1 overflow-y-auto">
 
             <!-- Chat item -->
-            <div class="px-4 py-3 flex items-center gap-3 hover:bg-gray-100 cursor-pointer">
+            <div class="px-4 py-3 flex items-center gap-3 hover:bg-gray-100 cursor-pointer transition">
                 <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
                 <div class="flex-1">
                     <p class="font-medium text-gray-700">Lam</p>
@@ -37,8 +37,7 @@
                 <span class="text-xs text-gray-400">12:30</span>
             </div>
 
-            <!-- Chat item -->
-            <div class="px-4 py-3 flex items-center gap-3 hover:bg-gray-100 cursor-pointer">
+            <div class="px-4 py-3 flex items-center gap-3 hover:bg-gray-100 cursor-pointer transition">
                 <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
                 <div class="flex-1">
                     <p class="font-medium text-gray-700">Mai</p>
@@ -47,8 +46,7 @@
                 <span class="text-xs text-gray-400">11:10</span>
             </div>
 
-            <!-- Chat item -->
-            <div class="px-4 py-3 flex items-center gap-3 hover:bg-gray-100 cursor-pointer">
+            <div class="px-4 py-3 flex items-center gap-3 hover:bg-gray-100 cursor-pointer transition">
                 <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
                 <div class="flex-1">
                     <p class="font-medium text-gray-700">Group Dev</p>
@@ -60,9 +58,59 @@
         </div>
     </div>
 
-    <!-- Chat Panel (tạm trống - Day 4) -->
-    <div class="flex-1 flex items-center justify-center text-gray-400">
-        <p>Chọn một cuộc trò chuyện để bắt đầu</p>
+    <!-- Chat Panel -->
+    <div class="flex-1 flex flex-col bg-gray-100">
+
+        <!-- Chat Header -->
+        <div class="p-4 bg-white border-b flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gray-300"></div>
+            <div>
+                <p class="font-semibold">Lam</p>
+                <p class="text-sm text-gray-500">Đang hoạt động</p>
+            </div>
+        </div>
+
+        <!-- Messages -->
+        <div id="messageArea" class="flex-1 p-4 overflow-y-auto space-y-4">
+
+            <!-- Left message -->
+            <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-gray-300"></div>
+                <div class="bg-white px-4 py-2 rounded-lg max-w-sm shadow">
+                    Ê mai m đi uống cf hong?
+                </div>
+            </div>
+
+            <!-- Right message -->
+            <div class="flex items-start justify-end gap-3">
+                <div class="bg-blue-500 text-white px-4 py-2 rounded-lg max-w-sm shadow">
+                    Đi chứ
+                </div>
+            </div>
+
+            <!-- Left message -->
+            <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-gray-300"></div>
+                <div class="bg-white px-4 py-2 rounded-lg max-w-sm shadow">
+                    9h nha
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Input Area -->
+        <div class="p-4 bg-white border-t flex items-center gap-3">
+            <input
+                type="text"
+                placeholder="Nhập tin nhắn..."
+                class="flex-1 px-4 py-2 bg-gray-100 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
+            >
+
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">
+                Gửi
+            </button>
+        </div>
+
     </div>
 
 </div>
