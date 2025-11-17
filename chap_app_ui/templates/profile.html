@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="w-full h-screen flex justify-center items-center bg-gray-100">
+
+    <div class="bg-white w-full max-w-xl rounded-2xl shadow-lg p-8">
+
+        <div class="flex flex-col items-center">
+            <div class="w-28 h-28 rounded-full bg-gray-300"></div>
+            <h2 class="mt-4 text-2xl font-semibold">Rin</h2>
+            <p class="text-gray-500 text-sm">Online</p>
+        </div>
+
+        <div class="mt-8 space-y-4">
+            <div class="p-4 border rounded-xl bg-gray-50">
+                <p class="text-gray-500 text-sm">Email</p>
+                <p class="font-medium">rin@example.com</p>
+            </div>
+
+            <div class="p-4 border rounded-xl bg-gray-50">
+                <p class="text-gray-500 text-sm">Giới thiệu</p>
+                <p class="font-medium">Không có gì để nói...</p>
+            </div>
+
+            <div class="p-4 border rounded-xl bg-gray-50">
+                <p class="text-gray-500 text-sm">Ngày tạo tài khoản</p>
+                <p class="font-medium">Chưa có dữ liệu</p>
+            </div>
+        </div>
+
+        <div class="mt-8 flex justify-center">
+            <a 
+              href="/settings" 
+              class="px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-xl transition"
+            >
+                Cài đặt
+            </a>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}
