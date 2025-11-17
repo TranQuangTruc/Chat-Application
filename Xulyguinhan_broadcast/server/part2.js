@@ -1,3 +1,8 @@
+// server_phan2.js
+// -----------------------------------------------
+// PHAN 2: NHAN TIN + KIEM TRA DU LIEU + LUU LICH SU
+// -----------------------------------------------
+
 const express = require('express')
 const http = require('http')
 const { Server } = require('socket.io')
